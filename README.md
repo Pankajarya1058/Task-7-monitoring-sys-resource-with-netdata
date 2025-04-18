@@ -8,6 +8,8 @@ Run following tasks:-
 ### Install docker
 ```
 sudo apt-get install docker.io
+sudo usermod -aG docker $USER
+newgrp docker
 ```
 
 ### Run Netdata container
