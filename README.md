@@ -1,0 +1,1 @@
+# Task-7-monitoring-sys-resource-with-netdata
