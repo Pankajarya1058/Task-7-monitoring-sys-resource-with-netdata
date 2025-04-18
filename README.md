@@ -28,6 +28,20 @@ docker run -d \
   --restart unless-stopped \
   netdata/netdata
 ```
+
+### Edit or Create "/etc/netdata/go.d/docker.conf" file
+```
+# go inside the netdata container
+docker exec -it netdata bash
+```
+```
+echo "enabled: yes" >> /etc/netdata/go.d/docker.conf
+exit
+```
+```
+docker restart netdata
+```
+
 ### Access Netdata 
 **Note** :- allow 19999 Port in Security Groups
 ```
